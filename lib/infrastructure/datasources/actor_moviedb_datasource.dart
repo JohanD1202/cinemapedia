@@ -6,7 +6,7 @@ import 'package:cinemapedia/infrastructure/models/moviedb/credits_response.dart'
 import 'package:dio/dio.dart';
 
 
-class ActorMoviedbDatasource extends ActorsDatasource {
+class ActorMovieDbDatasource extends ActorsDatasource {
 
   final dio = Dio(BaseOptions(
     baseUrl: 'https://api.themoviedb.org/3',

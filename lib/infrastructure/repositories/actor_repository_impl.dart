@@ -3,7 +3,7 @@ import 'package:cinemapedia/domain/entities/actor.dart';
 import 'package:cinemapedia/domain/repositories/actors_repository.dart';
 
 
-abstract class ActorRepositoryImpl extends ActorsRepository {
+class ActorRepositoryImpl extends ActorsRepository {
 
   final ActorsDatasource datasource;
   ActorRepositoryImpl(this.datasource);
