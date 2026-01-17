@@ -49,7 +49,7 @@ class _MovieHorizontalListviewState extends State<MovieHorizontalListview> {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 360,
+      height: 370,
       child: Column(
         children: [
 
@@ -107,7 +107,7 @@ class _Slide extends StatelessWidget {
                     );
                   }
                   return GestureDetector(
-                    onTap: () => context.push('/movie/${movie.id}'),
+                    onTap: () => context.push('/home/0/movie/${movie.id}'),
                     child: FadeIn(child: child),
                   );
                 },
@@ -122,6 +122,7 @@ class _Slide extends StatelessWidget {
             width: 150,
             child: Text(
               movie.title,
+              overflow: TextOverflow.ellipsis,
               maxLines: 2,
               style: textStyles.titleSmall,
             ),
